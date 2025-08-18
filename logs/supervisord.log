@@ -123,3 +123,54 @@
 2025-08-18 02:14:54,248 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2025-08-18 02:14:54,248 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2025-08-18 02:14:54,248 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 22:56:49,328 WARN received SIGQUIT indicating exit request
+2025-08-18 22:56:49,334 INFO waiting for php-fpm, nginx, cron to die
+2025-08-18 22:56:49,335 WARN stopped: cron (terminated by SIGTERM)
+2025-08-18 22:56:49,355 INFO stopped: nginx (exit status 0)
+2025-08-18 22:56:49,413 INFO stopped: php-fpm (exit status 0)
+2025-08-18 22:56:50,572 INFO Set uid to user 0 succeeded
+2025-08-18 22:56:50,575 INFO supervisord started with pid 1
+2025-08-18 22:56:51,579 INFO spawned: 'php-fpm' with pid 7
+2025-08-18 22:56:51,583 INFO spawned: 'nginx' with pid 8
+2025-08-18 22:56:51,585 INFO spawned: 'cron' with pid 9
+2025-08-18 22:56:51,639 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 22:56:52,642 INFO spawned: 'php-fpm' with pid 18
+2025-08-18 22:56:52,642 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 22:56:52,643 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 22:56:52,658 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 22:56:54,790 INFO spawned: 'php-fpm' with pid 19
+2025-08-18 22:56:54,807 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 22:56:57,814 INFO spawned: 'php-fpm' with pid 20
+2025-08-18 22:56:57,831 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 22:56:58,833 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2025-08-18 22:57:23,859 WARN received SIGQUIT indicating exit request
+2025-08-18 22:57:23,860 INFO waiting for nginx, cron to die
+2025-08-18 22:57:23,860 WARN stopped: cron (terminated by SIGTERM)
+2025-08-18 22:57:23,863 INFO stopped: nginx (exit status 0)
+2025-08-18 22:57:24,858 INFO Set uid to user 0 succeeded
+2025-08-18 22:57:24,861 INFO supervisord started with pid 1
+2025-08-18 22:57:25,863 INFO spawned: 'php-fpm' with pid 7
+2025-08-18 22:57:25,865 INFO spawned: 'nginx' with pid 8
+2025-08-18 22:57:25,867 INFO spawned: 'cron' with pid 9
+2025-08-18 22:57:25,881 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 22:57:26,884 INFO spawned: 'php-fpm' with pid 18
+2025-08-18 22:57:26,885 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 22:57:26,885 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 22:57:26,901 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 22:57:28,907 INFO spawned: 'php-fpm' with pid 19
+2025-08-18 22:57:28,924 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 22:57:31,932 INFO spawned: 'php-fpm' with pid 20
+2025-08-18 22:57:31,950 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 22:57:32,951 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2025-08-18 22:58:09,147 WARN received SIGQUIT indicating exit request
+2025-08-18 22:58:09,150 INFO waiting for nginx, cron to die
+2025-08-18 22:58:09,151 WARN stopped: cron (terminated by SIGTERM)
+2025-08-18 22:58:09,157 INFO stopped: nginx (exit status 0)
+2025-08-18 22:58:09,970 INFO Set uid to user 0 succeeded
+2025-08-18 22:58:09,975 INFO supervisord started with pid 1
+2025-08-18 22:58:10,979 INFO spawned: 'php-fpm' with pid 7
+2025-08-18 22:58:10,982 INFO spawned: 'nginx' with pid 8
+2025-08-18 22:58:10,983 INFO spawned: 'cron' with pid 9
+2025-08-18 22:58:12,004 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 22:58:12,004 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 22:58:12,004 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

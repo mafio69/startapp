@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
     zip \
     unzip \
     git \
+    logrotate \
     && rm -rf /var/lib/apt/lists/*
 
 # Install PHP extensions
@@ -33,13 +34,20 @@ COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY ./nginx/default.conf /etc/nginx/sites-available/default
 COPY ./php/xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 COPY ./php/php.ini /usr/local/etc/php/php.ini
-COPY ./php/php-fpm.conf /usr/local/etc/php-fpm.conf
 COPY ./supervisor/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Create directories and set permissions
-RUN mkdir -p /var/www/html /var/log/app /var/tmp /var/cache /var/run/php \
-    && chown -R www-data:www-data /var/www /var/log /var/tmp /var/cache /var/run/php \
-    && chmod -R 755 /var/www /var/log /var/tmp /var/cache /var/run/php \
+RUN mkdir -p /var/www/html /var/log/app /var/tmp /var/cache /var/run/php && \
+    chown -R www-data:www-data /var/www && \
+    chown -R www-data:www-data /var/log && \
+    chown -R www-data:www-data /var/tmp && \
+    chown -R www-data:www-data /var/cache && \
+    chown -R www-data:www-data /var/run/php && \
+    chmod -R 755 /var/www && \
+    chmod -R 755 /var/log && \
+    chmod -R 755 /var/tmp && \
+    chmod -R 755 /var/cache && \
+    chmod -R 755 /var/run/php && \
     usermod -a -G adm www-data
 
 # Enable shell for www-data
@@ -57,8 +65,21 @@ RUN touch /var/log/cron.log && \
     chown www-data:www-data /var/log/cron.log && \
     chmod 666 /var/log/cron.log
 
-# Clean default PHP-FPM config pool
-RUN rm -rf /usr/local/etc/php-fpm.d/*
+# Final fix PHP-FPM configuration (overwrite default config to avoid /proc/self/fd/2 error)
+RUN rm -rf /usr/local/etc/php-fpm.conf /usr/local/etc/php-fpm.d/* && \
+    echo "[global]" > /usr/local/etc/php-fpm.conf && \
+    echo "error_log = /dev/null" >> /usr/local/etc/php-fpm.conf && \
+    echo "daemonize = no" >> /usr/local/etc/php-fpm.conf && \
+    echo "" >> /usr/local/etc/php-fpm.conf && \
+    echo "[www]" >> /usr/local/etc/php-fpm.conf && \
+    echo "user = www-data" >> /usr/local/etc/php-fpm.conf && \
+    echo "group = www-data" >> /usr/local/etc/php-fpm.conf && \
+    echo "listen = 127.0.0.1:9000" >> /usr/local/etc/php-fpm.conf && \
+    echo "pm = dynamic" >> /usr/local/etc/php-fpm.conf && \
+    echo "pm.max_children = 5" >> /usr/local/etc/php-fpm.conf && \
+    echo "pm.start_servers = 2" >> /usr/local/etc/php-fpm.conf && \
+    echo "pm.min_spare_servers = 1" >> /usr/local/etc/php-fpm.conf && \
+    echo "pm.max_spare_servers = 3" >> /usr/local/etc/php-fpm.conf
 
 WORKDIR /var/www/html
 

@@ -80,3 +80,29 @@
 [18-Aug-2025 02:10:14] ERROR: FPM initialization failed
 [18-Aug-2025 02:14:53] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
 [18-Aug-2025 02:14:53] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[18-Aug-2025 22:56:51] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 22:56:51] ERROR: failed to post process the configuration
+[18-Aug-2025 22:56:51] ERROR: FPM initialization failed
+[18-Aug-2025 22:56:52] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 22:56:52] ERROR: failed to post process the configuration
+[18-Aug-2025 22:56:52] ERROR: FPM initialization failed
+[18-Aug-2025 22:56:54] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 22:56:54] ERROR: failed to post process the configuration
+[18-Aug-2025 22:56:54] ERROR: FPM initialization failed
+[18-Aug-2025 22:56:57] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 22:56:57] ERROR: failed to post process the configuration
+[18-Aug-2025 22:56:57] ERROR: FPM initialization failed
+[18-Aug-2025 22:57:25] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 22:57:25] ERROR: failed to post process the configuration
+[18-Aug-2025 22:57:25] ERROR: FPM initialization failed
+[18-Aug-2025 22:57:26] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 22:57:26] ERROR: failed to post process the configuration
+[18-Aug-2025 22:57:26] ERROR: FPM initialization failed
+[18-Aug-2025 22:57:28] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 22:57:28] ERROR: failed to post process the configuration
+[18-Aug-2025 22:57:28] ERROR: FPM initialization failed
+[18-Aug-2025 22:57:31] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 22:57:31] ERROR: failed to post process the configuration
+[18-Aug-2025 22:57:31] ERROR: FPM initialization failed
+[18-Aug-2025 22:58:11] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[18-Aug-2025 22:58:11] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root

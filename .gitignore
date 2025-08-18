@@ -1,0 +1,17 @@
+# Composer Dependencies
+/vendor/
+
+# Log files and directories
+/logs/
+
+# IDE & Editor specific files
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Swap files
+*.swp
+*.swo
