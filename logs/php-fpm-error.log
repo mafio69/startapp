@@ -1,0 +1,82 @@
+[18-Aug-2025 01:43:18] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 01:43:18] ERROR: failed to post process the configuration
+[18-Aug-2025 01:43:18] ERROR: FPM initialization failed
+[18-Aug-2025 01:43:19] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 01:43:19] ERROR: failed to post process the configuration
+[18-Aug-2025 01:43:19] ERROR: FPM initialization failed
+[18-Aug-2025 01:43:21] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 01:43:21] ERROR: failed to post process the configuration
+[18-Aug-2025 01:43:21] ERROR: FPM initialization failed
+[18-Aug-2025 01:43:25] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 01:43:25] ERROR: failed to post process the configuration
+[18-Aug-2025 01:43:25] ERROR: FPM initialization failed
+[18-Aug-2025 01:51:49] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 01:51:49] ERROR: failed to post process the configuration
+[18-Aug-2025 01:51:49] ERROR: FPM initialization failed
+[18-Aug-2025 01:51:53] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 01:51:53] ERROR: failed to post process the configuration
+[18-Aug-2025 01:51:53] ERROR: FPM initialization failed
+[18-Aug-2025 01:51:55] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 01:51:55] ERROR: failed to post process the configuration
+[18-Aug-2025 01:51:55] ERROR: FPM initialization failed
+[18-Aug-2025 01:51:58] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 01:51:58] ERROR: failed to post process the configuration
+[18-Aug-2025 01:51:58] ERROR: FPM initialization failed
+[18-Aug-2025 01:55:30] ERROR: [/usr/local/etc/php-fpm.d/www.conf:13] unknown entry 'error_log'
+[18-Aug-2025 01:55:30] ERROR: Unable to include /usr/local/etc/php-fpm.d/www.conf from /usr/local/etc/php-fpm.conf at line 13
+[18-Aug-2025 01:55:30] ERROR: failed to load configuration file '/usr/local/etc/php-fpm.conf'
+[18-Aug-2025 01:55:30] ERROR: FPM initialization failed
+[18-Aug-2025 01:55:32] ERROR: [/usr/local/etc/php-fpm.d/www.conf:13] unknown entry 'error_log'
+[18-Aug-2025 01:55:32] ERROR: Unable to include /usr/local/etc/php-fpm.d/www.conf from /usr/local/etc/php-fpm.conf at line 13
+[18-Aug-2025 01:55:32] ERROR: failed to load configuration file '/usr/local/etc/php-fpm.conf'
+[18-Aug-2025 01:55:32] ERROR: FPM initialization failed
+[18-Aug-2025 01:55:33] ERROR: [/usr/local/etc/php-fpm.d/www.conf:13] unknown entry 'error_log'
+[18-Aug-2025 01:55:33] ERROR: Unable to include /usr/local/etc/php-fpm.d/www.conf from /usr/local/etc/php-fpm.conf at line 13
+[18-Aug-2025 01:55:33] ERROR: failed to load configuration file '/usr/local/etc/php-fpm.conf'
+[18-Aug-2025 01:55:33] ERROR: FPM initialization failed
+[18-Aug-2025 01:55:35] ERROR: [/usr/local/etc/php-fpm.d/www.conf:13] unknown entry 'error_log'
+[18-Aug-2025 01:55:35] ERROR: Unable to include /usr/local/etc/php-fpm.d/www.conf from /usr/local/etc/php-fpm.conf at line 13
+[18-Aug-2025 01:55:35] ERROR: failed to load configuration file '/usr/local/etc/php-fpm.conf'
+[18-Aug-2025 01:55:35] ERROR: FPM initialization failed
+[18-Aug-2025 01:55:38] ERROR: [/usr/local/etc/php-fpm.d/www.conf:13] unknown entry 'error_log'
+[18-Aug-2025 01:55:38] ERROR: Unable to include /usr/local/etc/php-fpm.d/www.conf from /usr/local/etc/php-fpm.conf at line 13
+[18-Aug-2025 01:55:38] ERROR: failed to load configuration file '/usr/local/etc/php-fpm.conf'
+[18-Aug-2025 01:55:38] ERROR: FPM initialization failed
+[18-Aug-2025 01:58:20] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 01:58:20] ERROR: failed to post process the configuration
+[18-Aug-2025 01:58:20] ERROR: FPM initialization failed
+[18-Aug-2025 01:58:21] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 01:58:21] ERROR: failed to post process the configuration
+[18-Aug-2025 01:58:21] ERROR: FPM initialization failed
+[18-Aug-2025 01:58:23] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 01:58:23] ERROR: failed to post process the configuration
+[18-Aug-2025 01:58:23] ERROR: FPM initialization failed
+[18-Aug-2025 01:58:26] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 01:58:26] ERROR: failed to post process the configuration
+[18-Aug-2025 01:58:26] ERROR: FPM initialization failed
+[18-Aug-2025 02:01:15] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 02:01:15] ERROR: failed to post process the configuration
+[18-Aug-2025 02:01:15] ERROR: FPM initialization failed
+[18-Aug-2025 02:01:16] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 02:01:16] ERROR: failed to post process the configuration
+[18-Aug-2025 02:01:16] ERROR: FPM initialization failed
+[18-Aug-2025 02:01:19] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 02:01:19] ERROR: failed to post process the configuration
+[18-Aug-2025 02:01:19] ERROR: FPM initialization failed
+[18-Aug-2025 02:01:22] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 02:01:22] ERROR: failed to post process the configuration
+[18-Aug-2025 02:01:22] ERROR: FPM initialization failed
+[18-Aug-2025 02:10:08] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 02:10:08] ERROR: failed to post process the configuration
+[18-Aug-2025 02:10:08] ERROR: FPM initialization failed
+[18-Aug-2025 02:10:09] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 02:10:09] ERROR: failed to post process the configuration
+[18-Aug-2025 02:10:09] ERROR: FPM initialization failed
+[18-Aug-2025 02:10:11] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 02:10:11] ERROR: failed to post process the configuration
+[18-Aug-2025 02:10:11] ERROR: FPM initialization failed
+[18-Aug-2025 02:10:14] ERROR: failed to open error_log (/proc/self/fd/2): Permission denied (13)
+[18-Aug-2025 02:10:14] ERROR: failed to post process the configuration
+[18-Aug-2025 02:10:14] ERROR: FPM initialization failed
+[18-Aug-2025 02:14:53] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[18-Aug-2025 02:14:53] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root

@@ -1,0 +1,125 @@
+2025-08-18 01:43:17,854 INFO Set uid to user 0 succeeded
+2025-08-18 01:43:17,857 INFO supervisord started with pid 1
+2025-08-18 01:43:18,859 INFO spawned: 'php-fpm' with pid 7
+2025-08-18 01:43:18,861 INFO spawned: 'nginx' with pid 8
+2025-08-18 01:43:18,863 INFO spawned: 'cron' with pid 9
+2025-08-18 01:43:18,929 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:43:19,931 INFO spawned: 'php-fpm' with pid 18
+2025-08-18 01:43:19,932 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 01:43:19,932 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 01:43:19,954 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:43:21,958 INFO spawned: 'php-fpm' with pid 19
+2025-08-18 01:43:21,980 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:43:24,983 INFO spawned: 'php-fpm' with pid 20
+2025-08-18 01:43:25,005 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:43:26,006 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2025-08-18 01:51:46,801 WARN received SIGQUIT indicating exit request
+2025-08-18 01:51:46,802 INFO waiting for nginx, cron to die
+2025-08-18 01:51:46,804 WARN stopped: cron (terminated by SIGTERM)
+2025-08-18 01:51:46,813 INFO stopped: nginx (exit status 0)
+2025-08-18 01:51:48,419 INFO Set uid to user 0 succeeded
+2025-08-18 01:51:48,422 INFO supervisord started with pid 1
+2025-08-18 01:51:49,427 INFO spawned: 'php-fpm' with pid 7
+2025-08-18 01:51:49,431 INFO spawned: 'nginx' with pid 8
+2025-08-18 01:51:49,435 INFO spawned: 'cron' with pid 9
+2025-08-18 01:51:49,480 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:51:53,411 INFO spawned: 'php-fpm' with pid 18
+2025-08-18 01:51:53,412 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 01:51:53,412 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 01:51:53,455 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:51:55,458 INFO spawned: 'php-fpm' with pid 19
+2025-08-18 01:51:55,475 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:51:58,479 INFO spawned: 'php-fpm' with pid 20
+2025-08-18 01:51:58,496 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:51:59,496 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2025-08-18 01:55:28,418 WARN received SIGQUIT indicating exit request
+2025-08-18 01:55:28,418 INFO waiting for nginx, cron to die
+2025-08-18 01:55:28,419 WARN stopped: cron (terminated by SIGTERM)
+2025-08-18 01:55:28,427 INFO stopped: nginx (exit status 0)
+2025-08-18 01:55:29,708 INFO Set uid to user 0 succeeded
+2025-08-18 01:55:29,711 INFO supervisord started with pid 1
+2025-08-18 01:55:30,726 INFO spawned: 'php-fpm' with pid 7
+2025-08-18 01:55:30,729 INFO spawned: 'nginx' with pid 8
+2025-08-18 01:55:30,739 INFO spawned: 'cron' with pid 9
+2025-08-18 01:55:31,793 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 01:55:31,793 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 01:55:31,793 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 01:55:31,793 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:55:32,796 INFO spawned: 'php-fpm' with pid 18
+2025-08-18 01:55:32,818 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:55:33,820 INFO spawned: 'php-fpm' with pid 19
+2025-08-18 01:55:33,845 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:55:35,848 INFO spawned: 'php-fpm' with pid 20
+2025-08-18 01:55:35,864 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:55:38,868 INFO spawned: 'php-fpm' with pid 21
+2025-08-18 01:55:38,885 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:55:39,885 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2025-08-18 01:58:18,073 WARN received SIGQUIT indicating exit request
+2025-08-18 01:58:18,073 INFO waiting for nginx, cron to die
+2025-08-18 01:58:18,074 WARN stopped: cron (terminated by SIGTERM)
+2025-08-18 01:58:18,081 INFO stopped: nginx (exit status 0)
+2025-08-18 01:58:19,101 INFO Set uid to user 0 succeeded
+2025-08-18 01:58:19,103 INFO supervisord started with pid 1
+2025-08-18 01:58:20,106 INFO spawned: 'php-fpm' with pid 7
+2025-08-18 01:58:20,108 INFO spawned: 'nginx' with pid 8
+2025-08-18 01:58:20,111 INFO spawned: 'cron' with pid 9
+2025-08-18 01:58:20,138 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:58:21,140 INFO spawned: 'php-fpm' with pid 18
+2025-08-18 01:58:21,140 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 01:58:21,140 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 01:58:21,157 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:58:23,160 INFO spawned: 'php-fpm' with pid 19
+2025-08-18 01:58:23,177 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:58:26,181 INFO spawned: 'php-fpm' with pid 20
+2025-08-18 01:58:26,199 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 01:58:30,184 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2025-08-18 02:01:10,199 WARN received SIGQUIT indicating exit request
+2025-08-18 02:01:10,200 INFO waiting for nginx, cron to die
+2025-08-18 02:01:10,201 WARN stopped: cron (terminated by SIGTERM)
+2025-08-18 02:01:10,213 INFO stopped: nginx (exit status 0)
+2025-08-18 02:01:14,864 INFO Set uid to user 0 succeeded
+2025-08-18 02:01:14,868 INFO supervisord started with pid 1
+2025-08-18 02:01:15,871 INFO spawned: 'php-fpm' with pid 7
+2025-08-18 02:01:15,880 INFO spawned: 'nginx' with pid 8
+2025-08-18 02:01:15,884 INFO spawned: 'cron' with pid 9
+2025-08-18 02:01:15,925 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 02:01:16,930 INFO spawned: 'php-fpm' with pid 18
+2025-08-18 02:01:16,931 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 02:01:16,931 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 02:01:16,990 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 02:01:18,994 INFO spawned: 'php-fpm' with pid 19
+2025-08-18 02:01:19,018 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 02:01:22,022 INFO spawned: 'php-fpm' with pid 20
+2025-08-18 02:01:22,038 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 02:01:23,039 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2025-08-18 02:03:19,197 WARN received SIGQUIT indicating exit request
+2025-08-18 02:03:19,198 INFO waiting for nginx, cron to die
+2025-08-18 02:03:19,198 WARN stopped: cron (terminated by SIGTERM)
+2025-08-18 02:03:19,202 INFO stopped: nginx (exit status 0)
+2025-08-18 02:10:07,796 INFO Set uid to user 0 succeeded
+2025-08-18 02:10:07,799 INFO supervisord started with pid 1
+2025-08-18 02:10:08,801 INFO spawned: 'php-fpm' with pid 7
+2025-08-18 02:10:08,804 INFO spawned: 'nginx' with pid 8
+2025-08-18 02:10:08,806 INFO spawned: 'cron' with pid 9
+2025-08-18 02:10:08,829 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 02:10:09,831 INFO spawned: 'php-fpm' with pid 18
+2025-08-18 02:10:09,832 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 02:10:09,832 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 02:10:09,861 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 02:10:11,865 INFO spawned: 'php-fpm' with pid 19
+2025-08-18 02:10:11,880 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 02:10:14,884 INFO spawned: 'php-fpm' with pid 20
+2025-08-18 02:10:14,900 WARN exited: php-fpm (exit status 78; not expected)
+2025-08-18 02:10:15,900 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2025-08-18 02:14:51,408 WARN received SIGQUIT indicating exit request
+2025-08-18 02:14:51,408 INFO waiting for nginx, cron to die
+2025-08-18 02:14:51,408 WARN stopped: cron (terminated by SIGTERM)
+2025-08-18 02:14:51,412 INFO stopped: nginx (exit status 0)
+2025-08-18 02:14:52,224 INFO Set uid to user 0 succeeded
+2025-08-18 02:14:52,225 INFO supervisord started with pid 1
+2025-08-18 02:14:53,227 INFO spawned: 'php-fpm' with pid 7
+2025-08-18 02:14:53,229 INFO spawned: 'nginx' with pid 8
+2025-08-18 02:14:53,231 INFO spawned: 'cron' with pid 9
+2025-08-18 02:14:54,248 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 02:14:54,248 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-18 02:14:54,248 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
