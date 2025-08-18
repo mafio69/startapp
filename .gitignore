@@ -1,5 +1,5 @@
 # Composer Dependencies
-/vendor/
+app/vendor/
 
 # Log files and directories
 /logs/
@@ -15,3 +15,6 @@ Thumbs.db
 # Swap files
 *.swp
 *.swo
+
+# Runtime files
+*.pid

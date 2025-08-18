@@ -106,3 +106,11 @@
 [18-Aug-2025 22:57:31] ERROR: FPM initialization failed
 [18-Aug-2025 22:58:11] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
 [18-Aug-2025 22:58:11] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[18-Aug-2025 23:05:57] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[18-Aug-2025 23:05:57] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[18-Aug-2025 23:16:47] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[18-Aug-2025 23:16:47] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[18-Aug-2025 23:29:24] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[18-Aug-2025 23:29:24] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[18-Aug-2025 23:30:26] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[18-Aug-2025 23:30:26] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root

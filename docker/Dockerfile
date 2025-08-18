@@ -25,6 +25,13 @@ RUN docker-php-ext-install \
     gd \
     opcache
 
+# Install Composer
+RUN curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php && \
+    HASH=$(curl -sS https://composer.github.io/installer.sig) && \
+    php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('/tmp/composer-setup.php'); } echo PHP_EOL;" && \
+    php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer && \
+    rm /tmp/composer-setup.php
+
 # Install Xdebug
 RUN pecl install xdebug && \
     docker-php-ext-enable xdebug

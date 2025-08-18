@@ -182,3 +182,7 @@ exim: could not open panic log - aborting: see message(s) above
 2025-08-18 21:00:01 1uo6xV-0000000000N-2WHV <= www-data@localhost U=www-data P=local S=764
 2025-08-18 21:00:01 1uo6xV-0000000000N-2WHV Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
 exim: could not open panic log - aborting: see message(s) above
+2025-08-18 21:05:02 1uo72M-0000000000R-04bM Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-18 21:05:02 1uo72M-0000000000R-04bM <= www-data@localhost U=www-data P=local S=764
+2025-08-18 21:05:02 1uo72M-0000000000R-04bM Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
