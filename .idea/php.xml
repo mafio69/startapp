@@ -10,6 +10,12 @@
     <option name="highlightLevel" value="WARNING" />
     <option name="transferred" value="true" />
   </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/app/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/vendor/phpstan/phpstan" />
+    </include_path>
+  </component>
   <component name="PhpInterpreters">
     <interpreters>
       <interpreter id="07edcc6d-1ffd-49d1-89d0-575b02f1eb3d" name="web" home="docker-compose://DATA" auto="false" debugger_id="php.debugger.XDebug">

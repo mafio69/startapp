@@ -1,0 +1,16 @@
+services:
+  web:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+      args:
+        ENVIRONMENT: development
+    environment:
+      - APP_ENV=development
+      - PHP_ENV=dev
+    ports:
+      - "8080:80"
+      - "9003:9003"  # Xdebug port
+    volumes:
+      - ./app:/var/www/html
+      - ./logs:/var/log/app

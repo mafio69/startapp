@@ -114,3 +114,15 @@
 [18-Aug-2025 23:29:24] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
 [18-Aug-2025 23:30:26] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
 [18-Aug-2025 23:30:26] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[19-Aug-2025 22:27:33] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[19-Aug-2025 22:27:33] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[19-Aug-2025 20:44:18] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[19-Aug-2025 20:44:18] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[19-Aug-2025 20:50:27] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[19-Aug-2025 20:50:27] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[19-Aug-2025 20:51:31] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[19-Aug-2025 20:51:31] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[19-Aug-2025 21:01:26] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[19-Aug-2025 21:01:26] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[19-Aug-2025 21:02:12] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[19-Aug-2025 21:02:12] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root

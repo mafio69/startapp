@@ -1,6 +1,9 @@
-FROM php:8.3-fpm
+# Build argument for environment (dev or production)
+ARG ENVIRONMENT=development
 
-# Install packages
+FROM php:8.3-fpm AS base
+
+# Install packages common for all builds
 RUN apt-get update && apt-get install -y \
     nginx \
     supervisor \
@@ -25,25 +28,31 @@ RUN docker-php-ext-install \
     gd \
     opcache
 
-# Install Composer
-RUN curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php && \
-    HASH=$(curl -sS https://composer.github.io/installer.sig) && \
-    php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('/tmp/composer-setup.php'); } echo PHP_EOL;" && \
-    php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer && \
-    rm /tmp/composer-setup.php
-
-# Install Xdebug
+# Development stage with xdebug
+FROM base AS development
 RUN pecl install xdebug && \
     docker-php-ext-enable xdebug
+COPY ./php/xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+COPY ./php/php-dev.ini /usr/local/etc/php/php.ini
 
-# Copy configurations
+# Production stage without xdebug
+FROM base AS production
+COPY ./php/php-prod.ini /usr/local/etc/php/php.ini
+
+# Final stage - selects base image from ENVIRONMENT
+FROM ${ENVIRONMENT} as final
+
+# KLUCZOWE: Pass ARG to ENV to be available as environment variables inside container
+ARG ENVIRONMENT
+ENV APP_ENV=${ENVIRONMENT}
+ENV PHP_ENV=${ENVIRONMENT}
+
+# Copy common configs
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY ./nginx/default.conf /etc/nginx/sites-available/default
-COPY ./php/xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
-COPY ./php/php.ini /usr/local/etc/php/php.ini
 COPY ./supervisor/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-# Create directories and set permissions
+# Create and set permissions
 RUN mkdir -p /var/www/html /var/log/app /var/tmp /var/cache /var/run/php && \
     chown -R www-data:www-data /var/www && \
     chown -R www-data:www-data /var/log && \
@@ -60,11 +69,9 @@ RUN mkdir -p /var/www/html /var/log/app /var/tmp /var/cache /var/run/php && \
 # Enable shell for www-data
 RUN usermod --shell /bin/bash www-data
 
-# Prepare crontab file
+# Prepare crontab
 COPY ./cron/crontab /tmp/crontab
 RUN chmod 0644 /tmp/crontab
-
-# Install crontab for www-data user
 RUN crontab -u www-data /tmp/crontab && rm /tmp/crontab
 
 # Configure cron logs
@@ -72,7 +79,7 @@ RUN touch /var/log/cron.log && \
     chown www-data:www-data /var/log/cron.log && \
     chmod 666 /var/log/cron.log
 
-# Final fix PHP-FPM configuration (overwrite default config to avoid /proc/self/fd/2 error)
+# Final fix PHP-FPM configuration
 RUN rm -rf /usr/local/etc/php-fpm.conf /usr/local/etc/php-fpm.d/* && \
     echo "[global]" > /usr/local/etc/php-fpm.conf && \
     echo "error_log = /dev/null" >> /usr/local/etc/php-fpm.conf && \
