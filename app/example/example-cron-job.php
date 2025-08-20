@@ -15,11 +15,11 @@ if (!is_writable($logDir)) {
 }
 
 // Write to custom log
-file_put_contents('/var/log/app/custom-cron.log', $logMessage, FILE_APPEND | LOCK_EX);
+file_put_contents('/var/log/app/custom-example.log', $logMessage, FILE_APPEND | LOCK_EX);
 
 try {
     // Your job logic here
-    echo "Executing cron job at {$timestamp}\n";
+    echo "Executing example job at {$timestamp}\n";
 
     // Example: check file permissions
     $webDir = '/var/www/html';
@@ -27,11 +27,11 @@ try {
     $group = filegroup($webDir);
 
     $result = "Job completed successfully. Web dir owner: {$owner}, group: {$group}";
-    error_log("[{$timestamp}] {$result}", 3, '/var/log/app/custom-cron.log');
+    error_log("[{$timestamp}] {$result}", 3, '/var/log/app/custom-example.log');
 
 } catch (Exception $e) {
     $error = "[{$timestamp}] Cron job error: " . $e->getMessage();
-    error_log($error, 3, '/var/log/app/custom-cron.log');
+    error_log($error, 3, '/var/log/app/custom-example.log');
     exit(1);
 }
 ?>

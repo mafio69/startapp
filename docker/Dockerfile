@@ -28,31 +28,45 @@ RUN docker-php-ext-install \
     gd \
     opcache
 
+# Install Composer
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+
 # Development stage with xdebug
 FROM base AS development
 RUN pecl install xdebug && \
     docker-php-ext-enable xdebug
-COPY ./php/xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
-COPY ./php/php-dev.ini /usr/local/etc/php/php.ini
+# Copy dev-specific configs
+COPY ./docker/php/xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+COPY ./docker/php/php-dev.ini /usr/local/etc/php/php.ini
 
 # Production stage without xdebug
 FROM base AS production
-COPY ./php/php-prod.ini /usr/local/etc/php/php.ini
+# Copy prod-specific configs
+COPY ./docker/php/php-prod.ini /usr/local/etc/php/php.ini
 
 # Final stage - selects base image from ENVIRONMENT
-FROM ${ENVIRONMENT} as final
+FROM ${ENVIRONMENT} AS final
 
 # KLUCZOWE: Pass ARG to ENV to be available as environment variables inside container
 ARG ENVIRONMENT
 ENV APP_ENV=${ENVIRONMENT}
 ENV PHP_ENV=${ENVIRONMENT}
 
-# Copy common configs
-COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
-COPY ./nginx/default.conf /etc/nginx/sites-available/default
-COPY ./supervisor/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+# === SEPARATION OF CONCERNS ===
 
-# Create and set permissions
+# 1. APPLICATION SETUP + COMPOSER INSTALL
+WORKDIR /var/www/html
+COPY ./app/composer*.json ./
+RUN composer install --no-dev --optimize-autoloader
+COPY ./app .
+
+# 2. INFRASTRUCTURE CONFIGS (nginx, supervisor, cron)
+COPY ./docker/nginx/nginx.conf /etc/nginx/nginx.conf
+COPY ./docker/nginx/default.conf /etc/nginx/sites-available/default
+COPY ./docker/supervisor/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY ./docker/cron/crontab /tmp/crontab
+
+# 3. SYSTEM SETUP (permissions, users, directories)
 RUN mkdir -p /var/www/html /var/log/app /var/tmp /var/cache /var/run/php && \
     chown -R www-data:www-data /var/www && \
     chown -R www-data:www-data /var/log && \
@@ -69,17 +83,17 @@ RUN mkdir -p /var/www/html /var/log/app /var/tmp /var/cache /var/run/php && \
 # Enable shell for www-data
 RUN usermod --shell /bin/bash www-data
 
-# Prepare crontab
-COPY ./cron/crontab /tmp/crontab
-RUN chmod 0644 /tmp/crontab
-RUN crontab -u www-data /tmp/crontab && rm /tmp/crontab
+# 4. CRON SETUP
+RUN chmod 0644 /tmp/crontab && \
+    crontab -u www-data /tmp/crontab && \
+    rm /tmp/crontab
 
-# Configure cron logs
+# 5. LOGGING SETUP
 RUN touch /var/log/cron.log && \
     chown www-data:www-data /var/log/cron.log && \
     chmod 666 /var/log/cron.log
 
-# Final fix PHP-FPM configuration
+# 6. PHP-FPM CONFIGURATION OVERRIDE
 RUN rm -rf /usr/local/etc/php-fpm.conf /usr/local/etc/php-fpm.d/* && \
     echo "[global]" > /usr/local/etc/php-fpm.conf && \
     echo "error_log = /dev/null" >> /usr/local/etc/php-fpm.conf && \
@@ -94,8 +108,6 @@ RUN rm -rf /usr/local/etc/php-fpm.conf /usr/local/etc/php-fpm.d/* && \
     echo "pm.start_servers = 2" >> /usr/local/etc/php-fpm.conf && \
     echo "pm.min_spare_servers = 1" >> /usr/local/etc/php-fpm.conf && \
     echo "pm.max_spare_servers = 3" >> /usr/local/etc/php-fpm.conf
-
-WORKDIR /var/www/html
 
 EXPOSE 80 9003
 

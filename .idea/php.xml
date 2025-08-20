@@ -13,7 +13,6 @@
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/app/vendor/composer" />
-      <path value="$PROJECT_DIR$/app/vendor/phpstan/phpstan" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

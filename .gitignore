@@ -1,20 +1,32 @@
-# Composer Dependencies
+# Composer
 app/vendor/
+app/composer.lock
 
-# Log files and directories
-/logs/
+# Environment files
+.env
+.env.local
 
-# IDE & Editor specific files
-.idea/
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Docker
+.docker/
+
+# Temporary files
+tmp/
+temp/
+
+# IDE
 .vscode/
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Swap files
+.idea/
 *.swp
 *.swo
 
-# Runtime files
-*.pid
+# OS
+.DS_Store
+Thumbs.db
+
+# Application specific
+app/storage/
+app/bootstrap/cache/

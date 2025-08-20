@@ -1,0 +1,30 @@
+# Version control
+.git
+.gitignore
+
+# Documentation
+README.md
+README_pl.md
+*.md
+
+# Development files
+docker-compose*.yml
+start-*.sh
+
+# Logs
+logs/*
+
+# Temporary
+tmp/
+temp/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env*

@@ -218,3 +218,107 @@ exim: could not open panic log - aborting: see message(s) above
 2025-08-19 21:05:03 1uoTVv-0000000000N-3Wyz <= www-data@localhost U=www-data P=local S=764
 2025-08-19 21:05:03 1uoTVv-0000000000N-3Wyz Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
 exim: could not open panic log - aborting: see message(s) above
+2025-08-20 15:45:27 1uol0B-0000000000X-3RZh Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 15:45:27 1uol0B-0000000000X-3RZh <= www-data@localhost U=www-data P=local S=764
+2025-08-20 15:45:27 1uol0B-0000000000X-3RZh Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 15:50:06 1uol4g-0000000000b-1GN2 Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 15:50:06 1uol4g-0000000000b-1GN2 <= www-data@localhost U=www-data P=local S=764
+2025-08-20 15:50:06 1uol4g-0000000000b-1GN2 Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 15:55:07 1uol9X-0000000000g-0VOr Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 15:55:07 1uol9X-0000000000g-0VOr <= www-data@localhost U=www-data P=local S=764
+2025-08-20 15:55:07 1uol9X-0000000000g-0VOr Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 16:00:04 1uolEK-0000000000k-1VYX Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 16:00:04 1uolEK-0000000000k-1VYX <= www-data@localhost U=www-data P=local S=764
+2025-08-20 16:00:04 1uolEK-0000000000k-1VYX Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 16:05:04 1uolJA-0000000000W-0NSO Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 16:05:04 1uolJA-0000000000W-0NSO <= www-data@localhost U=www-data P=local S=764
+2025-08-20 16:05:04 1uolJA-0000000000W-0NSO Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 16:10:06 1uolO2-0000000000a-13As Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 16:10:06 1uolO2-0000000000a-13As <= www-data@localhost U=www-data P=local S=764
+2025-08-20 16:10:06 1uolO2-0000000000a-13As Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 16:15:07 1uolSt-0000000000f-2DM6 Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 16:15:07 1uolSt-0000000000f-2DM6 <= www-data@localhost U=www-data P=local S=764
+2025-08-20 16:15:07 1uolSt-0000000000f-2DM6 Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 16:20:07 1uolXj-0000000000p-27vg Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 16:20:07 1uolXj-0000000000p-27vg <= www-data@localhost U=www-data P=local S=764
+2025-08-20 16:20:07 1uolXj-0000000000p-27vg Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 16:35:03 1uolmB-0000000000N-3L3Y Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 16:35:03 1uolmB-0000000000N-3L3Y <= www-data@localhost U=www-data P=local S=764
+2025-08-20 16:35:03 1uolmB-0000000000N-3L3Y Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 16:40:04 1uolr2-0000000000R-2SBF Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 16:40:04 1uolr2-0000000000R-2SBF <= www-data@localhost U=www-data P=local S=764
+2025-08-20 16:40:04 1uolr2-0000000000R-2SBF Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 16:45:06 1uolvu-0000000000V-3jNx Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 16:45:06 1uolvu-0000000000V-3jNx <= www-data@localhost U=www-data P=local S=764
+2025-08-20 16:45:06 1uolvu-0000000000V-3jNx Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 16:50:06 1uom0k-0000000000h-2UgT Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 16:50:06 1uom0k-0000000000h-2UgT <= www-data@localhost U=www-data P=local S=764
+2025-08-20 16:50:06 1uom0k-0000000000h-2UgT Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 16:55:06 1uom5a-0000000000l-3nqK Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 16:55:06 1uom5a-0000000000l-3nqK <= www-data@localhost U=www-data P=local S=764
+2025-08-20 16:55:06 1uom5a-0000000000l-3nqK Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 17:00:07 1uomAR-0000000000p-2Xa7 Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 17:00:07 1uomAR-0000000000p-2Xa7 <= www-data@localhost U=www-data P=local S=764
+2025-08-20 17:00:07 1uomAR-0000000000p-2Xa7 Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 17:05:07 1uomFH-0000000000t-3x4A Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 17:05:07 1uomFH-0000000000t-3x4A <= www-data@localhost U=www-data P=local S=764
+2025-08-20 17:05:07 1uomFH-0000000000t-3x4A Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 17:10:07 1uomK7-0000000000x-2Ygd Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 17:10:07 1uomK7-0000000000x-2Ygd <= www-data@localhost U=www-data P=local S=764
+2025-08-20 17:10:07 1uomK7-0000000000x-2Ygd Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 17:15:04 1uomOu-00000000011-2yMz Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 17:15:04 1uomOu-00000000011-2yMz <= www-data@localhost U=www-data P=local S=764
+2025-08-20 17:15:04 1uomOu-00000000011-2yMz Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 19:10:03 1uooCB-00000000019-1E0L Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 19:10:03 1uooCB-00000000019-1E0L <= www-data@localhost U=www-data P=local S=764
+2025-08-20 19:10:03 1uooCB-00000000019-1E0L Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 19:15:03 1uooH1-0000000001D-00zh Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 19:15:03 1uooH1-0000000001D-00zh <= www-data@localhost U=www-data P=local S=764
+2025-08-20 19:15:03 1uooH1-0000000001D-00zh Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 19:20:03 1uooLr-0000000001v-0Avb Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 19:20:03 1uooLr-0000000001v-0Avb <= www-data@localhost U=www-data P=local S=764
+2025-08-20 19:20:03 1uooLr-0000000001v-0Avb Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 19:25:01 1uooQf-0000000000N-3TuZ Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 19:25:01 1uooQf-0000000000N-3TuZ <= www-data@localhost U=www-data P=local S=764
+2025-08-20 19:25:01 1uooQf-0000000000N-3TuZ Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 19:30:02 1uooVW-0000000000R-2G17 Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 19:30:02 1uooVW-0000000000R-2G17 <= www-data@localhost U=www-data P=local S=764
+2025-08-20 19:30:02 1uooVW-0000000000R-2G17 Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 19:35:01 1uooaL-0000000000V-3X62 Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 19:35:01 1uooaL-0000000000V-3X62 <= www-data@localhost U=www-data P=local S=764
+2025-08-20 19:35:01 1uooaL-0000000000V-3X62 Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 19:45:01 1uook1-0000000000N-1f8H Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 19:45:01 1uook1-0000000000N-1f8H <= www-data@localhost U=www-data P=local S=764
+2025-08-20 19:45:01 1uook1-0000000000N-1f8H Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 19:50:01 1uooor-0000000000R-2uoh Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 19:50:01 1uooor-0000000000R-2uoh <= www-data@localhost U=www-data P=local S=764
+2025-08-20 19:50:01 1uooor-0000000000R-2uoh Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
+2025-08-20 19:55:01 1uooth-0000000000V-49wb Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+2025-08-20 19:55:01 1uooth-0000000000V-49wb <= www-data@localhost U=www-data P=local S=764
+2025-08-20 19:55:01 1uooth-0000000000V-49wb Cannot open main log file "/var/log/exim4/mainlog": Permission denied: euid=100 egid=101
+exim: could not open panic log - aborting: see message(s) above
