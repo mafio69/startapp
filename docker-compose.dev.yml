@@ -24,7 +24,12 @@ services:
     networks:
       - dev-network
     restart: unless-stopped
-
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:80/health.php" ]
+      interval: 60s          # Rzadziej w dev
+      timeout: 15s           # Dłuższy timeout w dev
+      retries: 2             # Mniej prób w dev
+      start_period: 30s
 networks:
   dev-network:
     driver: bridge

@@ -138,3 +138,26 @@
 [20-Aug-2025 19:24:33] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
 [20-Aug-2025 19:41:44] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
 [20-Aug-2025 19:41:44] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[20-Aug-2025 20:05:39] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[20-Aug-2025 20:05:39] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+Cannot load Xdebug - it was already loaded
+[20-Aug-2025 20:11:51] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[20-Aug-2025 20:11:51] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+Cannot load Xdebug - it was already loaded
+[20-Aug-2025 20:21:13] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[20-Aug-2025 20:21:13] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+Cannot load Xdebug - it was already loaded
+[21-Aug-2025 07:37:40] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[21-Aug-2025 07:37:40] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+Cannot load Xdebug - it was already loaded
+[21-Aug-2025 14:37:13] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[21-Aug-2025 14:37:13] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+Cannot load Xdebug - it was already loaded
+[21-Aug-2025 14:40:06] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[21-Aug-2025 14:40:06] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+Cannot load Xdebug - it was already loaded
+[21-Aug-2025 14:44:21] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[21-Aug-2025 14:44:21] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+Cannot load Xdebug - it was already loaded
+[21-Aug-2025 14:51:47] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[21-Aug-2025 14:51:47] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root

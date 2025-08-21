@@ -27,6 +27,10 @@ RUN docker-php-ext-install \
     bcmath \
     gd \
     opcache
+# Stwórz katalogi logów i nadaj uprawnienia
+RUN mkdir -p /var/log/app/exim4 && \
+    chown www-data:www-data /var/log/app/exim4 && \
+    chmod 755 /var/log/app/exim4
 
 # Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
@@ -36,7 +40,7 @@ FROM base AS development
 RUN pecl install xdebug && \
     docker-php-ext-enable xdebug
 # Copy dev-specific configs
-COPY ./docker/php/xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+# COPY ./docker/php/xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 COPY ./docker/php/php-dev.ini /usr/local/etc/php/php.ini
 
 # Production stage without xdebug
@@ -91,7 +95,8 @@ RUN chmod 0644 /tmp/crontab && \
 # 5. LOGGING SETUP
 RUN touch /var/log/cron.log && \
     chown www-data:www-data /var/log/cron.log && \
-    chmod 666 /var/log/cron.log
+    chmod 666 /var/log/cron.log && \
+    chmod -R 755 /var/log/exim4
 
 # 6. PHP-FPM CONFIGURATION OVERRIDE
 RUN rm -rf /usr/local/etc/php-fpm.conf /usr/local/etc/php-fpm.d/* && \
@@ -109,6 +114,7 @@ RUN rm -rf /usr/local/etc/php-fpm.conf /usr/local/etc/php-fpm.d/* && \
     echo "pm.min_spare_servers = 1" >> /usr/local/etc/php-fpm.conf && \
     echo "pm.max_spare_servers = 3" >> /usr/local/etc/php-fpm.conf
 
-EXPOSE 80 9003
+
+EXPOSE 80 9003 9001
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
