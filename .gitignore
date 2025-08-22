@@ -7,8 +7,7 @@ app/composer.lock
 .env.local
 
 # Logs
-logs/*
-!logs/.gitkeep
+logs/
 
 # Docker
 .docker/
