@@ -21,4 +21,6 @@ Logger::warning('This warning shows in both DEV and PROD');
 Logger::error('This error always shows');
 
 phpinfo();
+
+// echo $test; // test raportowania błędów
 ?>
